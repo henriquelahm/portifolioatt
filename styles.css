@@ -582,10 +582,8 @@ main .sobre {
 .cursos_generico {
   padding: 30px;
   display: grid;
-
-  justify-content: center;
+  grid-template-columns: 1fr 1fr;
   gap: 10px;
-  align-items: center;
 }
 .cursos_generico h2 {
   font-family: var(--fonte-secundaria);
@@ -602,9 +600,15 @@ main .sobre {
   margin-bottom: 30px;
   grid-column: 1/-1;
 }
+.cursos_content,
+.c2 {
+  margin: 0;
+  justify-self: center;
+  text-align: center;
+  gap: 10px;
+}
 .cursos_generico .cursos_content div,
 .c2 div {
-  align-items: center;
   background-color: #222;
   padding: 40px;
   margin-top: 20px;
